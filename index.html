@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gaurav Vishwas | Portfolio</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #e3f2fd, #ffffff);
+      color: #333;
+      scroll-behavior: smooth;
+    }
+    h1, h2, h3 {
+      color: #2c3e50;
+    }
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+      padding: 2rem 0;
+    }
+    .hero {
+      text-align: center;
+      padding: 5rem 1rem;
+      background: linear-gradient(135deg, #64b5f6, #1e88e5);
+      color: white;
+    }
+    .hero h1 span {
+      color: #ffeb3b;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.7rem 1.5rem;
+      background-color: #1e88e5;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 25px;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background-color: #1565c0;
+    }
+    .skills-list, ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .skills-list li, ul li {
+      background-color: #f1f8e9;
+      margin: 0.4rem 0;
+      padding: 0.5rem 1rem;
+      border-radius: 10px;
+      display: inline-block;
+      margin-right: 0.5rem;
+    }
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .project-card {
+      padding: 1rem;
+      background-color: #fff3e0;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+    .project-card:hover {
+      transform: scale(1.03);
+    }
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+    }
+    footer {
+      background-color: #0d47a1;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+    .social-links a {
+      color: #ffeb3b;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    section {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
+    section h2 {
+      border-bottom: 3px solid #42a5f5;
+      display: inline-block;
+      padding-bottom: 0.3rem;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <section class="hero" data-aos="fade-in">
+    <h1>Hello, I'm <span>Gaurav Vishwas</span></h1>
+    <p>MCA Student | Full Stack Java Intern | Passionate Coder & Singer</p>
+    <a href="#projects" class="btn">View My Work</a>
+  </section>
+
+  <section class="section about container" data-aos="fade-up">
+    <h2>About Me</h2>
+    <p>I am currently pursuing MCA from Graphic Era Hill University and interning as a Full Stack Java Developer at Pisoft Informatics. I love coding and singing. My goal is to become a software developer.</p>
+  </section>
+
+  <section class="section skills container" data-aos="fade-up">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>Java</li><li>JSP</li><li>Servlets</li><li>HTML</li><li>CSS</li><li>JavaScript</li><li>MySQL</li><li>JDBC</li><li>PHP</li>
+    </ul>
+  </section>
+
+  <section class="section certifications container" data-aos="fade-up">
+    <h2>Certifications</h2>
+    <ul>
+      <li>Fundamentals of Generative AI - Microsoft</li>
+      <li>Secure Azure AI Services - Microsoft</li>
+      <li>Python and Flask Framework - Udemy</li>
+    </ul>
+  </section>
+
+  <section class="section projects container" id="projects" data-aos="fade-up">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Online Book Store</h3>
+        <p>Developed backend in PHP & MySQL. Handled cart, login & checkout features.</p>
+      </div>
+      <div class="project-card">
+        <h3>PG Management System</h3>
+        <p>Built using Java EE. Used JSP, Servlets, MySQL. User-friendly interface.</p>
+      </div>
+      <div class="project-card">
+        <h3>Movie Ticket Booking</h3>
+        <p>Dynamic ticket booking system with seat selection & confirmation.</p>
+      </div>
+      <div class="project-card">
+        <h3>Expense Management Web App</h3>
+        <p>Java EE-based software to track shared expenses with a friend, using JSP, Servlets, and MySQL.</p>
+      </div>
+      <div class="project-card">
+        <h3>Java Enrollment System (Console)</h3>
+        <p>Console-based app for managing students, courses & instructors with enrollment validation and reporting.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section achievements container" data-aos="fade-up">
+    <h2>Achievements</h2>
+    <ul>
+      <li>Successfully completed 6-month Full Stack Java internship.</li>
+      <li>Secured highest marks in Web Development coursework.</li>
+      <li>Won 1st prize in inter-college singing competition.</li>
+    </ul>
+  </section>
+
+  <section class="section contact container" data-aos="fade-up">
+    <h2>Contact Me</h2>
+    <form action="#" method="post" class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <section class="section resume container" data-aos="fade-up">
+    <h2>Resume</h2>
+    <a href="Gaurav_Resume.pdf" class="btn" download>Download Resume</a>
+  </section>
+
+  <section class="section professional container" data-aos="fade-up">
+    <h2>Professional Highlights</h2>
+    <ul>
+      <li>Built multiple Java EE-based web applications using Servlets and JSP.</li>
+      <li>Strong understanding of MVC architecture, RESTful APIs, and database integration.</li>
+      <li>Experience in working collaboratively with teams on real-time software development projects.</li>
+      <li>Demonstrated leadership in handling backend architecture and application logic.</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Gaurav Vishwas. All rights reserved.</p>
+    <div class="social-links">
+      <a href="https://github.com/gaurav-vishwas" target="_blank">GitHub</a>
+      <a href="https://linkedin.com/in/gaurav-vishwas03" target="_blank">LinkedIn</a>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>
