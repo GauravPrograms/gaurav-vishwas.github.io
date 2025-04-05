@@ -10,8 +10,8 @@
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
-      background: linear-gradient(to right, #e3f2fd, #ffffff);
-      color: #333;
+      background: linear-gradient(to right, #e3f2fd, #ffffff); /* Updated gradient */
+      color: #333; /* Updated text color */
       scroll-behavior: smooth;
     }
     h1, h2, h3 {
@@ -26,7 +26,7 @@
     .hero {
       text-align: center;
       padding: 5rem 1rem;
-      background: linear-gradient(135deg, #64b5f6, #1e88e5);
+      background: linear-gradient(135deg, #64b5f6, #1e88e5); /* Updated hero gradient */
       color: white;
     }
     .hero h1 span {
@@ -36,21 +36,21 @@
       display: inline-block;
       margin-top: 1rem;
       padding: 0.7rem 1.5rem;
-      background-color: #1e88e5;
+      background-color: #1e88e5; /* Updated button color */
       color: #fff;
       text-decoration: none;
       border-radius: 25px;
       transition: 0.3s;
     }
     .btn:hover {
-      background-color: #1565c0;
+      background-color: #1565c0; /* Updated hover color */
     }
     .skills-list, ul {
       list-style: none;
       padding-left: 0;
     }
     .skills-list li, ul li {
-      background-color: #f1f8e9;
+      background-color: #f1f8e9; /* Updated skill list background */
       margin: 0.4rem 0;
       padding: 0.5rem 1rem;
       border-radius: 10px;
@@ -64,13 +64,20 @@
     }
     .project-card {
       padding: 1rem;
-      background-color: #fff3e0;
+      background-color: #fff3e0; /* Updated project card background */
       border-radius: 10px;
       box-shadow: 0 2px 10px rgba(0,0,0,0.1);
       transition: 0.3s;
     }
     .project-card:hover {
       transform: scale(1.03);
+    }
+    .gallery-images img {
+      transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+    }
+    .gallery-images img:hover {
+      transform: scale(1.05); /* Slight zoom on hover */
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow effect */
     }
     .contact-form input, .contact-form textarea {
       width: 100%;
@@ -80,13 +87,13 @@
       border: 1px solid #ccc;
     }
     footer {
-      background-color: #0d47a1;
+      background-color: #0d47a1; /* Updated footer background */
       color: white;
       text-align: center;
       padding: 1rem;
     }
     .social-links a {
-      color: #ffeb3b;
+      color: #ffeb3b; /* Updated social link color */
       margin: 0 10px;
       text-decoration: none;
       font-weight: 600;
@@ -104,18 +111,28 @@
   </style>
 </head>
 <body>
+  <header>
+    <nav style="background-color: #1e88e5; padding: 1rem; text-align: center;">
+      <a href="#about" style="color: white; margin: 0 15px; text-decoration: none; font-weight: 600;">About</a>
+      <a href="#skills" style="color: white; margin: 0 15px; text-decoration: none; font-weight: 600;">Skills</a>
+      <a href="#projects" style="color: white; margin: 0 15px; text-decoration: none; font-weight: 600;">Projects</a>
+      <a href="#gallery" style="color: white; margin: 0 15px; text-decoration: none; font-weight: 600;">Gallery</a>
+      <a href="#contact" style="color: white; margin: 0 15px; text-decoration: none; font-weight: 600;">Contact</a>
+    </nav>
+  </header>
+
   <section class="hero" data-aos="fade-in">
     <h1>Hello, I'm <span>Gaurav Vishwas</span></h1>
     <p>MCA Student | Full Stack Java Intern | Passionate Coder & Singer</p>
     <a href="#projects" class="btn">View My Work</a>
   </section>
 
-  <section class="section about container" data-aos="fade-up">
+  <section class="section about container" id="about" data-aos="fade-up">
     <h2>About Me</h2>
     <p>I am currently pursuing MCA from Graphic Era Hill University and interning as a Full Stack Java Developer at Pisoft Informatics. I love coding and singing. My goal is to become a software developer.</p>
   </section>
 
-  <section class="section skills container" data-aos="fade-up">
+  <section class="section skills container" id="skills" data-aos="fade-up">
     <h2>Skills</h2>
     <ul class="skills-list">
       <li>Java</li><li>JSP</li><li>Servlets</li><li>HTML</li><li>CSS</li><li>JavaScript</li><li>MySQL</li><li>JDBC</li><li>PHP</li>
@@ -128,6 +145,7 @@
       <li>Fundamentals of Generative AI - Microsoft</li>
       <li>Secure Azure AI Services - Microsoft</li>
       <li>Python and Flask Framework - Udemy</li>
+      <li>AWS - Cloud Computing - Jr Analyst (ESSI)</li>
     </ul>
   </section>
 
@@ -157,6 +175,28 @@
     </div>
   </section>
 
+  <section class="section gallery container" id="gallery" data-aos="fade-up">
+    <h2>Gallery</h2>
+    <div class="gallery-images" style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+      <figure style="text-align: center;">
+        <img src="pic1.jpg" alt="Gallery Image 1" style="width: 100%; max-width: 300px; border-radius: 10px; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+        <figcaption style="margin-top: 10px; font-size: 0.9rem; color: #555;">A serene view of nature's beauty</figcaption>
+      </figure>
+      <figure style="text-align: center;">
+        <img src="pic2.jpg" alt="Gallery Image 2" style="width: 100%; max-width: 300px; border-radius: 10px; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+        <figcaption style="margin-top: 10px; font-size: 0.9rem; color: #555;">A memorable moment from Gray Fest</figcaption>
+      </figure>
+      <figure style="text-align: center;">
+        <img src="pic3.jpg" alt="Gallery Image 3" style="width: 100%; max-width: 300px; border-radius: 10px; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+        <figcaption style="margin-top: 10px; font-size: 0.9rem; color: #555;">Exploring the vibrant cityscape</figcaption>
+      </figure>
+      <figure style="text-align: center;">
+        <img src="pic4.jpg" alt="Gallery Image 4" style="width: 100%; max-width: 300px; border-radius: 10px; transition: transform 0.3s ease, box-shadow 0.3s ease;">
+        <figcaption style="margin-top: 10px; font-size: 0.9rem; color: #555;">A peaceful sunset by the lake</figcaption>
+      </figure>
+    </div>
+  </section>
+
   <section class="section achievements container" data-aos="fade-up">
     <h2>Achievements</h2>
     <ul>
@@ -166,7 +206,25 @@
     </ul>
   </section>
 
-  <section class="section contact container" data-aos="fade-up">
+  <section class="section timeline container" data-aos="fade-up">
+    <h2>Professional Timeline</h2>
+    <ul style="list-style: none; padding-left: 0;">
+      <li style="margin-bottom: 1rem;">
+        <strong>2025:</strong> Completed Full Stack Java Internship at Pisoft Informatics.
+      </li>
+      <li style="margin-bottom: 1rem;">
+        <strong>2024:</strong> Developed multiple Java EE-based web applications during MCA coursework.
+      </li>
+      <li style="margin-bottom: 1rem;">
+        <strong>2023:</strong> Started MCA at Graphic Era Hill University.
+      </li>
+      <li style="margin-bottom: 1rem;">
+        <strong>2022:</strong> Won 1st prize in inter-college singing competition.
+      </li>
+    </ul>
+  </section>
+
+  <section class="section contact container" id="contact" data-aos="fade-up">
     <h2>Contact Me</h2>
     <form action="#" method="post" class="contact-form">
       <input type="text" name="name" placeholder="Your Name" required />
@@ -178,7 +236,7 @@
 
   <section class="section resume container" data-aos="fade-up">
     <h2>Resume</h2>
-    <a href="Gaurav_Resume.pdf" class="btn" download>Download Resume</a>
+    <a href="Resume...pdf" class="btn" download="Resume...pdf">Download Resume</a>
   </section>
 
   <section class="section professional container" data-aos="fade-up">
@@ -191,12 +249,14 @@
     </ul>
   </section>
 
-  <footer>
+  <footer style="background-color: #0d47a1; color: white; text-align: center; padding: 1.5rem;">
     <p>&copy; 2025 Gaurav Vishwas. All rights reserved.</p>
-    <div class="social-links">
-      <a href="https://github.com/gaurav-vishwas" target="_blank">GitHub</a>
-      <a href="https://linkedin.com/in/gaurav-vishwas03" target="_blank">LinkedIn</a>
+    <div class="social-links" style="margin-top: 10px;">
+      <a href="mailto:Gaurav.vishwas03@gmail.com" target="_blank" style="color: #ffeb3b; margin: 0 10px; text-decoration: none; font-weight: 600;">Gmail</a>
+      <a href="https://www.linkedin.com/in/gaurav-vishwas-16224b306" target="_blank" style="color: #ffeb3b; margin: 0 10px; text-decoration: none; font-weight: 600;">LinkedIn</a>
+      <a href="https://github.com/gaurav-vishwas" target="_blank" style="color: #ffeb3b; margin: 0 10px; text-decoration: none; font-weight: 600;">GitHub</a>
     </div>
+    <p style="margin-top: 10px; font-size: 0.9rem;">Designed with ❤️ by Gaurav Vishwas</p>
   </footer>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
